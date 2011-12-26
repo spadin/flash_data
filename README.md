@@ -5,9 +5,9 @@ messages or notices without having to use a URL get parameter.
 
 ### Installation
 
-- [Download this package](https://github.com/spadin/flash_data/zipball/master).
-- Unzip the package in the packages directory of your Concrete5 installation.
-- Add the package from the Dashboard, click the Install Package button on the Add Functionality tab.
+0. [Download this package](https://github.com/spadin/flash_data/zipball/master).
+0. Unzip the package in the packages directory of your Concrete5 installation.
+0. From the Concrete5 dashboard, click the Install Package button in the Add Functionality tab.
 
 ### Usage
 
