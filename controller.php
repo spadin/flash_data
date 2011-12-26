@@ -5,7 +5,7 @@ class FlashDataPackage extends Package {
   
   protected $pkgHandle = 'flash_data';
   protected $appVersionRequired = '5.4.2.2';
-  protected $pkgVersion = '1.0';
+  protected $pkgVersion = '0.9';
 
   public function getPackageDescription() {
     return t("Set and retrieve flash data. Similar to Rails flash messages");
