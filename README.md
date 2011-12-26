@@ -3,6 +3,12 @@
 Easily set a one-time use notice or error message. Now you can pass error 
 messages or notices without having to use a URL get parameter.
 
+### Installation
+
+- [Download this package](https://github.com/spadin/flash_data/zipball/master).
+- Unzip the package in the packages directory of your Concrete5 installation.
+- Add the package from the Dashboard, click the Install Package button on the Add Functionality tab.
+
 ### Usage
 
 Controller:
@@ -23,4 +29,3 @@ Notice, this isn't the same as using `$this->set('variableName',$variable)`
 because the set method only work within the current controller. The flash data 
 works across controllers because it sets a temporary session variable with your 
 data that will be removed the first time it is accessed.
-
