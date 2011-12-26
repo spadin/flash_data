@@ -13,15 +13,15 @@ messages or notices without having to use a URL get parameter.
 
 Controller:
 
-        $flash_data = Loader::helper('flash_data','flash_data');
-        $flash_data->notice('My one-time message goes here instead of the URL.');
+        $flash = Loader::helper('flash_data','flash_data');
+        $flash->notice('My one-time message goes here instead of the URL.');
         
         $this->redirect('/somePage');
 
 View (/somePage):
 
-        <? $flash_data = Loader::helper('flash_data','flash_data'); ?>
-        <?= $flash_data->notice(); ?>
+        <?php $flash = Loader::helper('flash_data','flash_data'); ?>
+        <?php echo $flash->notice(); ?>
 
 _The notice deleted once it is accessed._
 
