@@ -11,6 +11,12 @@ class FlashDataHelper {
   public function alert($message = null) {
     return $this->flash('alert', $message);
   }
+  public function discard($kind) {
+    $name .= 'flash_' . $kind;
+    if(isset($_SESSION[$name])) {
+      unset($_SESSION[$name]);
+    }
+  }
 
   // You should probably stick to the three type of messages exposed above.
   // But if you need finer control then you can set this method to public 
