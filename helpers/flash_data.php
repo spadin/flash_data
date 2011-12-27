@@ -11,10 +11,17 @@ class FlashDataHelper {
   public function alert($message = null) {
     return $this->flash('alert', $message);
   }
-  public function discard($kind) {
-    $name .= 'flash_' . $kind;
-    if(isset($_SESSION[$name])) {
-      unset($_SESSION[$name]);
+  public function discard($kind = null) {
+    if($kind) {
+      $name .= 'flash_' . $kind;
+      if(isset($_SESSION[$name])) {
+        unset($_SESSION[$name]);
+      }
+    }
+    else {
+      $this->discard('notice');
+      $this->discard('error');
+      $this->discard('alert');
     }
   }
 
